@@ -23,4 +23,10 @@ public class HelloWebRestController {
     public String post(@RequestBody Entity entity){
         return "Welcome "+entity.getFirstName()+" "+entity.getLastName()+"!!!";
     }
+    
+    @PutMapping("/put/{firstName}")
+    public String put(@PathVariable String firstName,
+                      @RequestParam(value = "lastName") String lastName) {
+        return "Hello " + firstName + " " + lastName + "!";
+    }
 }
