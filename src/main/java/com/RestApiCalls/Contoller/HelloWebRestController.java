@@ -11,4 +11,9 @@ public class HelloWebRestController {
     public String getName(@RequestParam(value = "name", defaultValue = "Rahul") String name){
         return "<h1>Hii "+name+" ! Welcome to BridgeLabz!</h1>";
     }
+    
+    @RequestMapping(value = {"/{name}/{email}"},method = RequestMethod.GET)
+    public String getEmail(@PathVariable String email){
+        return "<h1>Your "+email+" ID is required!</h1>";
+    }
 }
