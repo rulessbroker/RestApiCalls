@@ -1,6 +1,7 @@
 package com.RestApiCalls;
 
-import org.springframework.boot.SpringApplication;
+import com.RestApiCalls.Contoller.*;
+import org.springframework.boot.SpringApplication;	
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
